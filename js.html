@@ -1,0 +1,20 @@
+<!DCOKTYPE HTML>
+<html lang="en"
+<head>
+     <meta charset="UTF-8">
+     <title>Document</title>
+     </head>
+     <body>
+     	<input type="text" palceholder="주민번호를 입력하세요" id="cityNum" />
+     	<imput type="button" onclick= "trimclear()" value="확인" />
+
+     	<script>
+     	function trimClear(){
+     		var cityCode = document.getElementaryById('cityNum').value;
+     		console.log(cityCode);
+     		var cityCodeTrim = cityCode.trim();
+     		alert("공백이 제거된 주민등록번호 " + cityCodeTrim);
+     	}           
+     </script>
+ </body>
+ </html>
